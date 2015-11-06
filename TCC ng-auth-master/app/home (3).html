@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Look.it</title>
+
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				box-sizing: border-box;
+				width: 100%;
+				position: fixed;
+			}
+			.header
+			{
+				top: 0;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+
+			.inputWrapper {
+				height: 32px;
+				width: 64px;
+				overflow: hidden;
+				position: relative;
+				cursor: pointer;
+				/*Using a background color, but you can use a background image to represent a button*/
+				background-color: #DDF;
+			}
+			.fileInput {
+				cursor: pointer;
+				height: 100%;
+				position:absolute;
+				top: 0;
+				right: 0;
+				z-index: 99;
+				/*This makes the button huge. If you want a bigger button, increase the font size*/
+				font-size:50px;
+				/*Opacity settings for all browsers*/
+				opacity: 0;
+				-moz-opacity: 0;
+				filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+			}
+		</style>
+
+		<link href="CSS/bootstrap.min.css" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				<font color="white"> Look</font><font color="#FC074C">.It</font>
+				<button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+			</div>
+			<div class="content">
+				<p><strong>Home</strong><br />
+					Click para abrir o menu.</p>
+				<p>Bacon ipsum dolor amet kielbasa picanha salami shank porchetta chuck tri-tip capicola. Prosciutto cow jerky capicola pork belly ground round, short ribs tongue tenderloin tri-tip flank ribeye. Beef cow filet mignon brisket alcatra venison bacon ham hock turkey tail meatloaf picanha flank biltong. Landjaeger boudin hamburger sausage tenderloin short loin. Pork chop bacon pork loin jerky beef tri-tip t-bone short ribs venison kielbasa tail filet mignon. Short ribs drumstick shankle, sirloin flank pork loin beef picanha shoulder sausage cupim.
+
+Drumstick prosciutto shank, bresaola tenderloin sausage turducken biltong beef ribs pastrami swine short ribs sirloin. Porchetta frankfurter ham hock landjaeger, pork belly pig beef ribs bacon. Boudin chicken ham hock, tri-tip venison turducken short ribs salami tenderloin picanha sausage ball tip bacon brisket. Shank t-bone pork chuck kevin bresaola chicken. Sirloin bresaola drumstick flank meatball. Meatloaf bresaola tail tri-tip, salami pork chop drumstick turkey spare ribs kielbasa pancetta. Tail pastrami ribeye ground round jowl, meatball andouille swine ball tip t-bone short loin shankle.
+
+T-bone sausage kielbasa, salami tri-tip chicken ribeye. Pork short loin pork chop, brisket chuck landjaeger venison cow picanha. Pastrami turducken ribeye shoulder tenderloin meatloaf prosciutto andouille. Chicken tongue biltong, porchetta pork jerky ground round jowl bacon pig.
+
+Pork loin pork chop cupim landjaeger meatloaf, kielbasa ham brisket spare ribs jerky meatball. Meatball salami short ribs frankfurter, biltong flank drumstick prosciutto picanha pork loin short loin beef ribs ham corned beef. Salami bresaola bacon, pancetta doner flank alcatra spare ribs turducken meatball kevin fatback ribeye jerky filet mignon. Shoulder chuck fatback hamburger, tongue biltong ball tip pancetta sausage turducken salami pork loin frankfurter picanha flank. Strip steak pork loin flank boudin. Jerky tenderloin ham hock spare ribs bacon drumstick.
+
+Porchetta swine ribeye cupim meatball short ribs rump. Prosciutto chicken chuck shank pork loin pork belly jerky. Meatloaf ham tail brisket tenderloin, pancetta sirloin boudin andouille picanha chuck turducken. Turkey cow cupim, ribeye drumstick landjaeger meatloaf sausage corned beef pork loin. Fatback tongue sirloin biltong short ribs drumstick. Ham hamburger meatball fatback, flank drumstick ham hock landjaeger t-bone pork.
+
+Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!</p>
+				<p><strong><h3>Comentários</h3></strong></p>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><img src="Perfil.jpg" alt="..." class="img-circle .img-responsive .center-block">
+						<p><strong><h3>Caio Novaes</h3></strong></p></li>
+					<li class="mm-selected"><a href="#home"><img src="Icons/home.png" alt="Home" style="width:20px;height:20px;">Home</a></li>
+					<li><a href="perfil.html"><img src="Icons/User.png" alt="Home" style="width:20px;height:20px;">Perfil</a>
+						<ul>
+							<li><a href="posts.html"><img src="Icons/Glasses.png" alt="Home" style="width:20px;height:20px;">Looks Postados</a></li>
+							<li><a href="likes.html"><img src="Icons/Heart.png" alt="Home" style="width:20px;height:20px;">Looks Curtidos</a></li>
+							<li><a href="configs.html"><img src="Icons/Settings.png" alt="Home" style="width:20px;height:20px;">Configurações</a></li>
+						</ul>
+					</li>
+					<li><a href="aboutus.html"><img src="Icons/Questionmark.png" alt="Home" style="width:20px;height:20px;">Sobre nós</a></li>
+				</ul>
+			</nav>
+			  <div class="modal fade" id="myModal" role="dialog">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title">Poste Seu Look</h4>
+						</div>
+						<div class="modal-body">
+							<form>
+								<div class="form-group">
+								<label for="comment">Faça a sua pergunta :)</label>
+								<br>
+								<textarea name="Pergunta" rows="4" cols="90" class="form-control noresize" placeholder="Faça sua pergunta, não custa nada :)"></textarea><br>
+
+								<div class="container">
+									<div class="row">
+										<div class="col-md-4">
+											<label for="comment">Selecione uma imagem</label><br>
+											<img id="Imagem1" style="width: 100px; height: 100px;" class="img-thumbnail"/>
+											<input id="uploadImage1" type="file" name="myPhoto" onchange="PreviewImage();" class="fileInput"/>
+										</div>
+										<div class="col-md-8">
+											<label for="comment">Selecione outra imagem</label><br>
+											<img id="Imagem2" style="width: 100px; height: 100px;" class="img-thumbnail"/>
+											<input id="uploadImage2" type="file" name="myPhoto" onchange="PreviewImage2();" class="fileInput"/>
+										</div>
+									</div>
+								</div>
+								<script type="text/javascript">
+
+									function PreviewImage() {
+										var oFReader = new FileReader();
+										oFReader.readAsDataURL(document.getElementById("uploadImage1").files[0]);
+
+										oFReader.onload = function (oFREvent) {
+											document.getElementById("Imagem1").src = oFREvent.target.result;
+										};
+									};
+
+									function PreviewImage2() {
+										var oFReader = new FileReader();
+										oFReader.readAsDataURL(document.getElementById("uploadImage2").files[0]);
+
+										oFReader.onload = function (oFREvent) {
+											document.getElementById("Imagem2").src = oFREvent.target.result;
+										};
+									};
+
+								</script>
+								<br>
+								<div class="row">
+									<div class="col-md-4"><button type="button" class="btn btn-danger" data-dismiss="modal"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>Cancelar</button></div>
+									<div class="col-md-8"><button type="button" class="btn btn-success"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Postar :)</button></div>
+								</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

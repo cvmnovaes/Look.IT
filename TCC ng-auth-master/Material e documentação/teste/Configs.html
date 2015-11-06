@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Look.it</title>
+		
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				box-sizing: border-box;
+				width: 100%;
+				position: fixed;
+			}
+			.header
+			{
+				top: 0;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+		</style>
+		
+		<link type="text/css" rel="stylesheet" href="CSS/demo.css" />
+		<link type="text/css" rel="stylesheet" href="CSS/jquery.mmenu.all.css" />
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type="text/javascript" src="Js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				<font color="white"> Look</font><font color="#FC074C">.It</font>
+			</div>
+			<div class="content">
+				<p><strong>Configs</strong><br />
+					Compartilhe seu visual e obtenha ajuda dos usuários, Look<font color="#FC074C">.it</font>..</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque varius justo vel massa tempus pretium. Cras a augue vitae risus ultricies bibendum et nec libero. Morbi sit amet dapibus mi, ut sagittis dolor. Morbi ut nulla nibh. Nulla eget dui ut lorem convallis dictum a vitae neque. Morbi tempor nisi est, sed sagittis enim eleifend sit amet. Sed efficitur dictum lorem a ultricies. Vivamus condimentum ultrices ex, id euismod lectus porta molestie. Aliquam varius tortor id lectus sollicitudin, a ornare tellus maximus. Nulla fermentum interdum sem, eu porttitor tortor cursus a.
+
+Ut blandit semper arcu, semper bibendum nisi porta quis. Nunc gravida aliquam sollicitudin. Praesent lacus neque, elementum id congue eget, tempor quis felis. Nullam fermentum nibh est, eget tempus augue aliquet sit amet. Suspendisse suscipit porttitor felis quis pellentesque. Nullam molestie neque ligula, nec rhoncus mauris cursus vel. Suspendisse potenti.
+
+Sed sed arcu eu felis euismod efficitur vel quis purus. Sed mollis dapibus metus, non finibus velit ultrices vel. Pellentesque tempus lectus id metus gravida, non sodales enim rhoncus. In commodo ex sit amet est consequat, id efficitur nulla volutpat. Aliquam sed risus facilisis quam laoreet sagittis. Phasellus ultrices, mi in congue lacinia, nunc risus molestie sapien, vitae molestie orci erat at eros. In sodales tempus tempus. Vivamus rutrum vehicula lectus nec elementum. Donec vel lectus nibh. Suspendisse libero odio, vehicula ac congue pretium, pharetra ac neque. In ut consectetur elit. Nam dignissim at felis quis feugiat. Proin tempor accumsan nulla quis consequat. Maecenas quam felis, viverra vitae interdum quis, tempor vel ipsum. Fusce mattis euismod iaculis.
+
+Mauris ante nulla, accumsan et tortor volutpat, dignissim accumsan nibh. Quisque congue cursus lorem, et fermentum purus ullamcorper nec. Pellentesque molestie scelerisque diam ac ornare. Duis a quam id ante pharetra scelerisque id quis dui. Nullam vestibulum, turpis sit amet gravida faucibus, nulla enim cursus nulla, sed vestibulum lacus velit sit amet erat. Nam consequat sodales quam, vel efficitur lacus commodo et. Sed lobortis nunc mauris, in dapibus magna pulvinar sed. Vivamus sagittis accumsan ante sed accumsan. Nulla sed lectus ipsum. Vivamus dignissim posuere risus, ut lobortis ligula aliquam id. Fusce bibendum venenatis facilisis. Aenean gravida nibh vitae ultricies iaculis. Praesent sagittis vestibulum felis id ultricies. Sed mattis enim a massa blandit aliquam. Nulla nulla ante, fringilla sit amet porttitor bibendum, fermentum nec nibh.
+
+Suspendisse elementum erat eu dignissim accumsan. Fusce non magna in neque iaculis facilisis vitae in erat. Proin mollis laoreet sagittis. Cras efficitur, nisi a tincidunt dictum, odio ante lacinia sem, ut tristique risus tortor vel tellus. Curabitur rutrum accumsan porttitor. Sed id egestas felis, eu pulvinar arcu. Integer eleifend tortor fringilla risus dignissim, a vestibulum erat blandit. Aenean sollicitudin volutpat elementum. In porta mauris quis felis posuere, eu auctor eros scelerisque. Mauris nunc libero, malesuada eget rutrum et, fringilla nec est. Morbi congue neque feugiat aliquet tempor. In pretium in nibh et ultrices. Aenean in ipsum venenatis, malesuada nisl vel, ultricies purus. Nullam leo dolor, tincidunt a purus vel, congue hendrerit arcu. Nam id leo vel neque venenatis pellentesque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li><a href="Home.html"><img src="Icons/home.png" alt="Home" style="width:20px;height:20px;">Home</a></li>
+					<li class="mm-selected"><a href="#Perfil"><img src="Icons/User.png" alt="Home" style="width:20px;height:20px;">Perfil</a>
+						<ul>
+							<li><a href="Posts.html"><img src="Icons/Glasses.png" alt="Home" style="width:20px;height:20px;">Looks Postados</a></li>
+							<li><a href="Likes.html"><img src="Icons/Heart.png" alt="Home" style="width:20px;height:20px;">Looks Curtidos</a></li>
+							<li class="mm-selected"><a href="Configs.html"><img src="Icons/Settings.png" alt="Home" style="width:20px;height:20px;">Configurações</a></li>
+						</ul>
+					</li>
+					<li class="mm-selected"><a href="AboutUs.html"><img src="Icons/Questionmark.png" alt="Home" style="width:20px;height:20px;">Sobre nós</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

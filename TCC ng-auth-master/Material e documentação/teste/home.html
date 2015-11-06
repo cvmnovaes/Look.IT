@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		    <!-- Firebase -->
+		    <script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+
+		    <!-- Angular -->
+		    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+
+		    <!-- AngularFire -->
+		    <script src="https://cdn.firebase.com/libs/angularfire/1.1.1/angularfire.js"></script>
+
+		    <!-- Custom JS -->
+		    <script src="js/app.js"></script>
+
+		    <!-- Bootstrap -->
+		    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+
+		<title>Look.it</title>
+
+		<style type="text/css">
+			.header,
+			.footer
+			{
+				box-sizing: border-box;
+				width: 100%;
+				position: fixed;
+			}
+			.header
+			{
+				top: 0;
+			}
+			.footer
+			{
+				bottom: 0;
+			}
+		</style>
+
+		<link type="text/css" rel="stylesheet" href="css/demo.css" />
+		<link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+		<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	</head>
+	<body ng-controller="AuthCtrl">
+		<div id="page">
+			<div class="header">
+				<a href="#menu"></a>
+				<font color="white"> Look</font><font color="#FC074C">.It</font>
+			</div>
+			<div class="content">
+				<p><strong>Home</strong><br />
+					Click para abrir o menu.</p>
+					<img src="camisetaBranca.jpg" alt="" class="img-responsive img-rounded">
+					<img src="CamisetaLaranja.jpg" alt="" class="img-responsive img-rounded">
+				<p><strong><h3>Comentários</h3></strong></p>
+			</div>
+			<nav id="menu">
+				<ul>
+					<li class="mm-selected"><a href="Home.html"><img src="Icons/home.png" alt="Home" style="width:20px;height:20px;">Home</a></li>
+					<li><a href="Perfil.html"><img src="Icons/User.png" alt="Home" style="width:20px;height:20px;">Perfil</a>
+						<ul>
+							<li><a href="Posts.html"><img src="Icons/Glasses.png" alt="Home" style="width:20px;height:20px;">Looks Postados</a></li>
+							<li><a href="Likes.html"><img src="Icons/Heart.png" alt="Home" style="width:20px;height:20px;">Looks Curtidos</a></li>
+							<li><a href="Configs.html"><img src="Icons/Settings.png" alt="Home" style="width:20px;height:20px;">Configurações</a></li>
+						</ul>
+					</li>
+					<li><a href="AboutUs.html"><img src="Icons/Questionmark.png" alt="Home" style="width:20px;height:20px;">Sobre nós</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
